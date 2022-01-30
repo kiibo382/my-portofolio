@@ -11,24 +11,13 @@
     "@sveltejs/adapter-static": "^1.0.0-next.26",
     "@sveltejs/kit": "next",
     "dayjs": "^1.10.4",
-    "i": "^0.3.7",
-    "js-yaml": "^3.14.1",
-    "npm": "^8.4.0",
-    "rehype-highlight": "^4.1.0",
-    "rehype-stringify": "^8.0.0",
-    "remark-frontmatter": "^3.0.0",
-    "remark-gfm": "^1.0.0",
-    "remark-parse": "^9.0.0",
-    "remark-rehype": "^8.0.0",
     "sass": "^1.0.0",
     "svelte": "^3.44.0",
-    "svelte-preprocess": "^4.0.0",
-    "to-vfile": "^6.1.0",
-    "unified": "^9.2.1",
-    "vite": "^2.1.0"
+    "svelte-preprocess": "^4.0.0"
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/fira-mono": "^4.5.0"
+    "@fontsource/fira-mono": "^4.5.0",
+    "marked": "^4.0.12"
   }
 }

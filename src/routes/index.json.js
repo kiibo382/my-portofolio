@@ -9,6 +9,7 @@ export function get() {
         const { metadata } = process(`src/posts/${fileName}`);
         return {
           metadata,
+          // remove file extension
           slug: fileName.slice(0, -3)
         };
       });
