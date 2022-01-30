@@ -2,14 +2,6 @@
 	export const prerender = true;
 </script>
 
-<script>
-	import Counter from '$lib/Counter.svelte';
-</script>
-
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
 <section>
 	<h1>
 		<div class="welcome">
@@ -19,14 +11,8 @@
 			</picture>
 		</div>
 
-		to your new<br />SvelteKit app
+		to kiibo's portofolio
 	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
 </section>
 
 <style>
