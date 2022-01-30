@@ -1,12 +1,12 @@
 import { process } from '$lib/markdown';
-import fs from 'fs';
+import {readdirSync, readFileSync} from 'fs';
 import dayjs from 'dayjs';
 
 export function get() {
-  let posts = fs.readdirSync(`src/posts`)
+  let posts = readdirSync(`src/posts`)
       .filter(fileName => /.+\.md$/.test(fileName))
       .map(fileName => {
-        const { metadata } = process(`src/posts/${fileName}`);
+        const metadata = JSON.parse(readFileSync(`src/posts/${fileName.slice(0, -3)}.json`));
         return {
           metadata,
           // remove file extension
