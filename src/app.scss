@@ -1,8 +1,6 @@
 @import '@fontsource/fira-mono';
 
 :root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
 	--primary-color: #b9c6d2;
@@ -12,13 +10,10 @@
 	--heading-color: rgba(0, 0, 0, 0.7);
 	--text-color: #444444;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
 }
 
 body {
 	min-height: 100vh;
-	margin: 0;
 	background-color: var(--primary-color);
 	background: linear-gradient(
 		180deg,
@@ -28,22 +23,6 @@ body {
 	);
 }
 
-body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	opacity: 0.05;
-}
-
 #svelte {
 	display: flex;
 	flex-direction: column;
@@ -51,6 +30,8 @@ body::before {
 
 h1 {
   text-align: center;
+  font-size: 40px;
+  color: #676778;
 }
 
 h1, h2, h3, p, a, ul {
@@ -71,11 +52,6 @@ code {
   font-size: 14px;
   font-weight: 400;
 } 
-
-h1 {
-  font-size: 40px;
-  color: #676778;
-}
 
 h2 {
   font-size: 26px;

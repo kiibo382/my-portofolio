@@ -22,9 +22,3 @@
 <h1 class="title">{post.metadata.title}</h1>
 <p class="info"><a href="https://github.com/shota_kizawa">Shota Kizawa</a> {date}</p>
 {@html post.content}
-
-<style>
-  h1.title {
-    margin-bottom: 0;
-  }
-</style>

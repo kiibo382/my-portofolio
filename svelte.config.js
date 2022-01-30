@@ -7,7 +7,11 @@ const config = {
 	// for more information about preprocessors
 	preprocess: sveltePreprocess(),
 	kit: {
-		adapter: static_adapter(),
+		adapter: static_adapter({
+			pages: 'public',
+			assets: 'public',
+			fallback: null,
+		}),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 
