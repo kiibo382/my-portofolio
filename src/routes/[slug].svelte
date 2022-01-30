@@ -20,5 +20,5 @@
 </svelte:head>
 
 <h1 class="title">{post.metadata.title}</h1>
-<p class="info"><a href="https://github.com/shota_kizawa">Shota Kizawa</a> {date}</p>
+<p class="info"><a href="https://github.com/kiibo382">Shota Kizawa</a> {date}</p>
 {@html post.content}
